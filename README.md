@@ -26,21 +26,23 @@
 
 ## Структура репозиторію
 
+```
 ├── data/
-│   └── preprocessing.py        # завантаження DICOM/NIfTI, ресемплінг, нормалізація
+│   └── preprocessing.py        
 ├── segmentation/
-│   ├── losses.py                # FocalTverskyLoss, SkeletonRecallLoss
-│   └── dataset.py               # CoarseDataset, FineDataset
+│   ├── losses.py                
+│   └── dataset.py               
 ├── detection/
-│   ├── dataset.py               # AneurysmDataset
-│   ├── evaluate.py              # метрики: AUC-ROC, Macro AUC, Sens@Spec95
+│   ├── dataset.py               
+│   ├── evaluate.py              
 │   └── models/
-│       ├── resnet3d.py          # ResNet3D-50 детектор
-│       ├── nnunet.py            # nnU-Net детектор
-│       └── swin_unetr.py        # Swin UNETR детектор
+│       ├── resnet3d.py          
+│       ├── nnunet.py            
+│       └── swin_unetr.py        
 ├── report/
-│   └── generate_report.py      # генерація діагностичного звіту
+│   └── generate_report.py      
 └── requirements.txt
+```
 
 ## Датасет
 
